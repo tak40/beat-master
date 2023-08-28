@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-container">
+        <!-- Audio element to pre-load the kick sound -->
+        <audio id="kickSound" src="sounds/kick.wav"></audio>
+        <audio id="snareSound" src="sounds/snare.wav"></audio>
+        <audio id="hihatSound" src="sounds/hihat.wav"></audio>
+        <!-- Main app heading -->
+        <h1>BeatMaster</h1>
+
+        <!-- Button to play the kick sound -->
+        <div class="btn-container">
+            <button id="kickButton" onclick="playKick()">Kick</button>
+            <button id="snareButton" onclick="playSnare()">Snare</button>
+            <button id="hihatButton" onclick="playHihat()">Hihat</button>
+        </div>
+        <!-- Including the JavaScript file -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

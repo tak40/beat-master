@@ -1,0 +1,54 @@
+/* Default styling to remove any margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #444;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  gap: 10px;
+}
+
+/* Styling the button */
+#kickButton,
+#snareButton,
+#hihatButton {
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+#kickButton:hover,
+#snareButton:hover,
+#hihatButton:hover {
+  background-color: #555;
+}
+
+
+#kickButton:active, 
+#snareButton:active,
+#hihatButton:active {
+    transform: scale(0.95);  /* Scale the button to 95% of its size */
+    transition: transform 0.1s;  /* Smooth the scaling effect */
+}
